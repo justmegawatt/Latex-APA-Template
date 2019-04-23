@@ -1,0 +1,59 @@
+\documentclass[letterpaper, 12pt, titlepage]{article}
+
+\usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{apacite}
+
+\lhead{Paper Name}
+\fancyhead[R]{\thepage}
+\font\myfont=cmr12 at 15pt
+
+\begin{document}
+\title{{\myfont Title of Your Paper\vspace{-2.5ex}}}
+\author{Author Name}
+\date{Institution Name}
+
+\pagestyle{fancy}
+\maketitle
+
+\section*{\centering Abstract}
+\blindtext[1]
+
+\newpage
+
+\section{Example Section 1}
+\blindtext[1]
+
+\blindtext[1]
+
+\section{Example Section 2}
+\subsection{Citing in page example}
+Some text and other things here.
+
+``When subjects judge whether a test symbol is contained in a short memorized
+sequence of symbols, their mean reaction-time increases linearly with the length
+of the sequence.'' \cite{sternberg1966high}.
+Note this is just an example citation 
+
+\subsection{Citing a larger piece of text example}
+
+More text and other things here.
+\begin{quote}
+``When subjects judge whether a test symbol is contained in a short memorized
+sequence of symbols, their mean reaction-time increases linearly with the length
+of the sequence.'' \cite{sternberg1966high}.
+  \end{quote}
+
+Some more text and other things here.
+
+
+
+\newpage
+
+
+\bibliographystyle{apacite}
+\bibliography{References}
+
+
+\end{document}
