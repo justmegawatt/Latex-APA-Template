@@ -1,21 +1,26 @@
 \documentclass[letterpaper, 12pt, titlepage]{article}
+\linespread{2}
 
 \usepackage{blindtext}
 \usepackage[margin=1in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{apacite}
+\usepackage{url}
+\usepackage{indentfirst}
 
-\lhead{Paper Name}
-\fancyhead[R]{\thepage}
 \font\myfont=cmr12 at 15pt
+\fancyhead[L]{Paper Name}
+\fancyhead[R]{\thepage}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{0}
 
 \begin{document}
+
 \title{{\myfont Title of Your Paper\vspace{-2.5ex}}}
 \author{Author Name}
 \date{Institution Name}
-
-\pagestyle{fancy}
 \maketitle
+\newpage
 
 \section*{\centering Abstract}
 \blindtext[1]
